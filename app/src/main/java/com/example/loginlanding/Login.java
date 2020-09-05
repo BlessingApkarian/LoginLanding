@@ -52,21 +52,11 @@ public class Login extends AppCompatActivity {
     }
 
     public boolean validateUsername(String username){
-        // if username and password match, move to landing page
-        if(username.equals("admin") || username.equals("Thanos")){
-            return true;
-        } else {
-            return false;
-        }
+        return username.equals("admin") || username.equals("Thanos");
     }
 
     public boolean validatePassword(String password){
-        // if username and password match, move to landing page
-        if(password.equals("order66") || password.equals("snap")){
-            return true;
-        } else {
-            return false;
-        }
+        return password.equals("order66") || password.equals("snap");
     }
 
     public void login(String username, String password){
