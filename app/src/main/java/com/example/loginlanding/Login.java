@@ -36,7 +36,7 @@ public class Login extends AppCompatActivity {
                     username.setError("Incorrect");
                     Toast.makeText(Login.this, "Incorrect Username", Toast.LENGTH_SHORT).show();
                 }
-                if(!validatePassword(password.getText().toString())){
+                if (!validatePassword(password.getText().toString())){
                     password.setError("Incorrect");
                     Toast.makeText(Login.this, "Incorrect Password", Toast.LENGTH_SHORT).show();
                 }
